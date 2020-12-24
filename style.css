@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    padding-left: 30px !important;
+    background-color: rgb(126,14,42);
+}
+
+.navbar-brand {
+    font-family: "Great Vibes";
+    padding: 4px auto;
+    font-weight: bolder;
+    font-size: 35px !important;
+    letter-spacing: 10px;
+}
+
+
+.navbar-nav li {
+    padding-right: 30px;
+
+}
+
+.nav-link {
+    display: inline-block;
+    font-size: 20px;
+   
+    letter-spacing: 1.5px;
+    font-weight: bolder;   
+}
+
+
+.banner-area {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/nafaka_gl_slika.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home {
+    min-height: 50vh;
+    width: 100%;
+    background: rgb(70,78,113);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.content {
+    font-size: 30px;
+    width: 60%;
+    text-align: center;
+}
+
+.menu {
+    width: 100%;
+    min-height: 100vh ;
+    background: rgb(240, 238, 235);
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: whitesmoke;
+   
+}
+
+.title {
+    padding: 30px;
+    text-align: center;
+}
+
+.menu-board {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-menu {
+    min-width: 40%;
+    padding: 2em 2em 1em;
+    border: 5px solid #000;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.main-menu h4 {
+    cursor: pointer;
+}
+
+.menu-option a {
+    color: black;
+}
+
+.hideable-section {
+    display: none;
+    min-width: 40%;
+    padding: 2em 2em 1em;
+    border: 5px solid #000;
+    text-align: left;
+    margin-bottom: 1em;
+    
+    
+}
+
+#section-one {
+    display: block;
+    min-width: 40%;
+    padding: 2em 2em 1em;
+    border: 5px solid #000;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+
+
+.menu-item {
+    margin-bottom: 1em;
+}
+
+.menu-item-top-line {
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    
+}
+
+.menu-item-top-line h4 {
+    max-width: 60%;
+}
+
+.menu-item-description {
+    font-size: .667em;
+    line-height: 1.8em;
+}
+
+#section-eight .column-one{
+    width: 50%;
+}
+
+#section-eight .menu-item-description {
+    width: 40%;
+}
+
+.hideable-part {
+    display: none;
+    min-width: 40%;
+    padding: 2em 2em 1em;
+    border: 5px solid #000;
+    text-align: left;
+    margin-bottom: 1em;
+    
+}
+
+#part-one {
+    display: block;
+    min-width: 40%;
+    padding: 2em 2em 1em;
+    border: 5px solid #000;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+#part-eight .column-one{
+    width: 50%;
+}
+
+#part-eight .menu-item-description {
+    width: 40%;
+}
+
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+h3 {
+    font-size: 1.5em;
+}
+
+h3, p {
+    margin: 0 0 1em;
+}
+
+div {
+    display: block;
+}
+
+.photo {
+    background-color:rgb(188,123,95);
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    min-height: 100vh;
+    grid-gap: 1rem;
+    padding-bottom: 2%;
+    
+}
+
+.img-container{
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.img-container img:hover {
+    transform: scale(1.2);
+}
+
+.opened-img {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-out;
+}
+
+.opened-img.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.full-img {
+    position: absolute;
+    height: 60%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.25s ease-out;
+}
+
+.full-img.open {
+    transform: translate(-50%, -50%) scale(1.3);
+}
+
+.contact {
+    background-color: whitesmoke;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+   font-size: large;
+}
+
+.contact .container {
+    padding: 5%;
+}
+
+.contact a {
+    color: rgb(126,14,42);
+    font-size: 40px;
+}
+
+.contact .col-sm-12 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 100%;
+    height: 70px;
+   
+}
+
+.contact ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    width: 50%;
+    
+}
+
+.contact li {
+    list-style: none;
+    position: relative;
+   
+}
+
+
+
+
